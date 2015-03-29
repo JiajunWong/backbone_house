@@ -1,0 +1,26 @@
+html {
+    background: #fff url(../images/site/html.jpg) repeat;
+}
+
+/*.site {*/
+/*width: 960px;*/
+/*min-height: 630px;*/
+/*margin: 20px auto 0;*/
+/*}*/
+
+.thumbnail {
+    width: 300px;
+    height: 280px;
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#allHouses {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bgColorImage {
+    background-color: #CEBDBD;
+}

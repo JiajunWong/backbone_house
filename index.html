@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/globalStyles.css">
+</head>
+
+<body>
+
+<div class="site">
+    <div id="allHouses"></div>
+</div>
+
+<script id="houseElement" type="text/template">
+    <div class="col-md-16">
+        <div class="thumbnail col-md-8">
+            <img src='<%= image %>' style="width:150px;height:150px"/>
+            <ul>
+                <li class="houseInfo"><strong>House Type:</strong> <%= house_type %></li>
+                <li class="houseInfo"><strong>Owner:</strong> <%= owner %></li>
+                <li class="houseInfo"><strong>ZipCode:</strong> <%= zipcode %></li>
+            </ul>
+        </div>
+    </div>
+</script>
+
+<script src="js/libs/jquery.js"></script>
+<script src="js/libs/underscore.js"></script>
+<script src="js/libs/backbone.js"></script>
+<script src="js/models/houseModel.js"></script>
+<script src="js/views/houseView.js"></script>
+<script src="js/views/houseCollectionView.js"></script>
+<script src="js/collections/houseCollection.js"></script>
+<script src="js/routes/router.js"></script>
+<script src="js/flowerApp.js"></script>
+
+</body>
+</html>
