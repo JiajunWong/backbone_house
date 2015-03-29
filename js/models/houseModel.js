@@ -8,20 +8,8 @@ app.house = Backbone.Model.extend({
     defaults: {
         house_type: 'apartment',
         owner: 'undefined',
-        address: "",
-        zipcode: "",
-        image: ""
-    },
+        zipcode: '94403',
+        image: 'http://7vijse.com1.z0.glb.clouddn.com/FiLtX7rYr4VWV0T_Rpe7s84TM2qV'
+    }
 
-    initialize: function () {
-        this.validators = {};
-
-        this.validators.zipcode = function (value) {
-            return value.length > 0 ? {isValid: true} : {isValid: false, message: "You must enter a grape variety"};
-        };
-
-        this.validators.country = function (value) {
-            return value.length > 0 ? {isValid: true} : {isValid: false, message: "You must enter a country"};
-        };
-    },
 });
